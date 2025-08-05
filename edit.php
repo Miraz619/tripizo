@@ -1,9 +1,9 @@
 <?php
-// filepath: c:\xampp\htdocs\tripizo\edit.php
+
 
 include 'connect.php';
 
-// Fetch the latest user (change query for real authentication)
+
 $result = mysqli_query($conn, "SELECT * FROM user_info ORDER BY id DESC LIMIT 1");
 $user = mysqli_fetch_assoc($result);
 ?>
