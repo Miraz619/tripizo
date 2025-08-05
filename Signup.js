@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
+    const form = document.getElementById("signupForm");
     const fields = [
-        "fullname",
+        "full_name",
         "email",
-        "phone",
+        "phone_number",
         "dob",
-        "permanent-address",
-        "current-address",
+        "permanent_address",
+        "current_address",
         "password",
-        "confirm-password",
-        "profile-photo"
+        "confirm_password",
+       
     ];
 
     function setError(input, message) {
@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Full Name
-        const fullname = document.getElementById("fullname");
-        if (!fullname.value.trim()) {
-            setError(fullname, "Full name is required.");
+        const fullName = document.getElementById("full_name");
+        if (!fullName.value.trim()) {
+            setError(fullName, "Full name is required.");
             valid = false;
         }
 
@@ -60,8 +60,8 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Phone
-        const phone = document.getElementById("phone");
+        // Phone Number
+        const phone = document.getElementById("phone_number");
         const phonePattern = /^\d{11}$/;
         if (!phone.value.trim()) {
             setError(phone, "Phone number is required.");
@@ -79,14 +79,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Permanent Address
-        const permanent = document.getElementById("permanent-address");
+        const permanent = document.getElementById("permanent_address");
         if (!permanent.value.trim()) {
             setError(permanent, "Permanent address is required.");
             valid = false;
         }
 
         // Current Address
-        const current = document.getElementById("current-address");
+        const current = document.getElementById("current_address");
         if (!current.value.trim()) {
             setError(current, "Current/Temporary address is required.");
             valid = false;
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Password
         const password = document.getElementById("password");
-        const confirmPassword = document.getElementById("confirm-password");
+        const confirmPassword = document.getElementById("confirm_password");
         const passwordPattern = /^(?=.*\d).{4,}$/;
         if (!password.value) {
             setError(password, "Password is required.");
@@ -113,14 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Profile Photo
-        const photo = document.getElementById("profile-photo");
-        if (!photo.files || photo.files.length === 0) {
-            setError(photo, "Profile photo is required.");
-            valid = false;
-        }
-
         if (!valid) {
+            // Add this line for debugging
             e.preventDefault();
         }
     });
