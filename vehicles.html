@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Vehicles | Tripizo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <div class="h-15 flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-bold">
+                <i class="fas fa-car text-black-500 ml-4"></i>
+                <span>Tripizo</span>
+            </h1>
+        </div>
+        <div class="flex gap-10">
+            <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
+            <a href="vehicles.html" class="text-base font-bold text-orange-500">Vehicles</a>
+            <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
+            <a href="about.html" class="text-base font-bold hover:text-red-500">About Us</a>
+            <a href="contact.html" class="text-base font-bold hover:text-red-500">Contact Us</a>
+        </div>
+        <div class="mr-6">
+            <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="py-12 bg-gradient-to-r from-orange-500 to-red-500">
+        <h1 class="text-5xl font-bold text-center text-white drop-shadow">Our Vehicle Fleet</h1>
+        <p class="text-center text-orange-100 mt-4 text-lg">Choose from our extensive collection of well-maintained vehicles</p>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="bg-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4">
+                <select id="categoryFilter" class="px-4 py-2 rounded-md bg-white text-black font-medium">
+                    <option value="all">All Categories</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="microbus">Microbus</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+                <select id="seatsFilter" class="px-4 py-2 rounded-md bg-white text-black font-medium">
+                    <option value="all">Any Seats</option>
+                    <option value="4">4 Seats</option>
+                    <option value="5">5 Seats</option>
+                    <option value="7">7 Seats</option>
+                    <option value="8">8+ Seats</option>
+                </select>
+                <button onclick="filterVehicles()" class="bg-orange-500 px-6 py-2 rounded-md text-white font-bold hover:bg-orange-600">
+                    Filter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vehicles Grid -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="vehicleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Toyota Axio -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
+                    <img src="image/axio.png" alt="Toyota Axio" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Axio</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">5 Seats</span>
+                            <i class="fas fa-cog text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Automatic</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Available in Dhaka, Chittagong</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳4,500</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota Allion -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
+                    <img src="image/allion.png" alt="Toyota Allion" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Allion</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">5 Seats</span>
+                            <i class="fas fa-cog text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Automatic</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Available in All Major Cities</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳5,200</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota X-Corolla -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
+                    <img src="image/corolla.png" alt="Toyota X-Corolla" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota X-Corolla</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">5 Seats</span>
+                            <i class="fas fa-cog text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Manual/Auto</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Dhaka, Sylhet, Rajshahi</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳4,800</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota Premio -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="luxury" data-seats="5">
+                    <img src="image/premio.png" alt="Toyota Premio" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Premio</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">5 Seats</span>
+                            <i class="fas fa-star text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Luxury</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Dhaka, Chittagong, Cox's Bazar</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳7,500</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota X-Noah -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="8">
+                    <img src="image/noah.png" alt="Toyota X-Noah" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota X-Noah</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">8 Seats</span>
+                            <i class="fas fa-cog text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Automatic</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Family Tours - All Districts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳8,500</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota Hiace -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="15">
+                    <img src="image/hiace.png" alt="Toyota Hiace" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Hiace</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">15 Seats</span>
+                            <i class="fas fa-suitcase text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Large Luggage</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Group Tours - Nationwide</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳12,000</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota Coaster -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="28">
+                    <img src="image/coaster.png" alt="Toyota Coaster" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Coaster</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">28 Seats</span>
+                            <i class="fas fa-wifi text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">AC + Comfort</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Corporate Events - All BD</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳18,000</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honda Fit -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
+                    <img src="image/fit.png" alt="Honda Fit" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Honda Fit</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">5 Seats</span>
+                            <i class="fas fa-leaf text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">Eco Friendly</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">City Rides - Urban Areas</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳3,800</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Toyota Land Cruiser -->
+                <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="suv" data-seats="7">
+                    <img src="image/land.png" alt="Toyota Land Cruiser" class="h-48 w-full object-contain bg-white" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Toyota Land Cruiser</h3>
+                        <div class="flex items-center mb-3">
+                            <i class="fas fa-users text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">7 Seats</span>
+                            <i class="fas fa-mountain text-orange-500 ml-4 mr-2"></i>
+                            <span class="text-gray-600">4WD</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-map-marker-alt text-orange-500 mr-2"></i>
+                            <span class="text-gray-600">Adventure Tours - Hill Tracts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-orange-500">৳25,000</span>
+                                <span class="text-gray-500">/day</span>
+                            </div>
+                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Features -->
+    <div class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Our Vehicles?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-shield-alt text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Fully Insured</h3>
+                    <p class="text-gray-600">All vehicles covered with comprehensive insurance</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-tools text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Well Maintained</h3>
+                    <p class="text-gray-600">Regular servicing and quality checks</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-user-tie text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">Professional Drivers</h3>
+                    <p class="text-gray-600">Experienced and courteous chauffeurs</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-4xl text-orange-500 mb-4"></i>
+                    <h3 class="text-lg font-bold mb-2">24/7 Support</h3>
+                    <p class="text-gray-600">Round the clock customer assistance</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Tripizo</h2>
+                    <p class="text-gray-400">We are best at providing reliable and affordable car rentals for your journey.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Useful Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-orange-400 transition-colors">Home</a></li>
+                        <li><a href="vehicles.html" class="hover:text-orange-400 transition-colors">Vehicles</a></li>
+                        <li><a href="about.html" class="hover:text-orange-400 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Contact</h2>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-phone-alt mr-2 text-orange-400"></i> 01642008569</li>
+                        <li><i class="fab fa-whatsapp mr-2 text-green-400"></i> 01642008569</li>
+                        <li><i class="fas fa-envelope mr-2 text-blue-400"></i> tripizo32@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function filterVehicles() {
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            const seatsFilter = document.getElementById('seatsFilter').value;
+            const vehicleCards = document.querySelectorAll('.vehicle-card');
+            
+            vehicleCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const seats = card.getAttribute('data-seats');
+                
+                let showCard = true;
+                
+                if (categoryFilter !== 'all' && category !== categoryFilter) {
+                    showCard = false;
+                }
+                
+                if (seatsFilter !== 'all') {
+                    const seatNumber = parseInt(seats);
+                    const filterSeat = parseInt(seatsFilter);
+                    
+                    if (seatsFilter === '8' && seatNumber < 8) {
+                        showCard = false;
+                    } else if (seatsFilter !== '8' && seatNumber !== filterSeat) {
+                        showCard = false;
+                    }
+                }
+                
+                card.style.display = showCard ? 'block' : 'none';
+            });
+        }
+    </script>
+
+</body>
+</html>
