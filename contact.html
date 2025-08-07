@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Tripizo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <div class="h-15 flex justify-between items-center">
+        <div>
+            <h1 class="text-xl font-bold">
+                <i class="fas fa-car text-black-500 ml-4"></i>
+                <span>Tripizo</span>
+            </h1>
+        </div>
+        <div class="flex gap-10">
+            <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
+            <a href="vehicles.html" class="text-base font-bold hover:text-red-500">Vehicles</a>
+            <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
+            <a href="about.html" class="text-base font-bold hover:text-red-500">About Us</a>
+            <a href="contact.html" class="text-base font-bold text-orange-500">Contact Us</a>
+        </div>
+        <div class="mr-6">
+            <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="py-16 bg-gradient-to-r from-green-600 to-blue-600">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-5xl font-bold text-white mb-6">Get In Touch</h1>
+            <p class="text-xl text-green-100 leading-relaxed">
+                We're here to help you with all your car rental needs across Bangladesh. 
+                Reach out to us anytime!
+            </p>
+        </div>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center p-8 bg-orange-50 rounded-xl">
+                    <div class="bg-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Call Us</h3>
+                    <p class="text-gray-600 mb-4">Speak directly with our customer service team</p>
+                    <a href="tel:01885478700" class="text-orange-500 font-bold text-lg hover:text-orange-600">
+                        01885478700
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Available 24/7</p>
+                </div>
+
+                <div class="text-center p-8 bg-green-50 rounded-xl">
+                    <div class="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">WhatsApp</h3>
+                    <p class="text-gray-600 mb-4">Quick booking and instant support</p>
+                    <a href="https://wa.me/8801885478700" class="text-green-500 font-bold text-lg hover:text-green-600">
+                        01885478700
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Fastest response</p>
+                </div>
+
+                <div class="text-center p-8 bg-blue-50 rounded-xl">
+                    <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Email Us</h3>
+                    <p class="text-gray-600 mb-4">Send us detailed inquiries</p>
+                    <a href="mailto:tripizo32@gmail.com" class="text-blue-500 font-bold text-lg hover:text-blue-600">
+                        tripizo32@gmail.com
+                    </a>
+                    <p class="text-sm text-gray-500 mt-2">Response within 2 hours</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form & Office Info -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
+                    <form id="contactForm">
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_name">Your Name</label>
+                            <input type="text" id="contact_name" name="contact_name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_phone">Phone Number</label>
+                            <input type="tel" id="contact_phone" name="contact_phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="01XXXXXXXXX" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_email">Email Address</label>
+                            <input type="email" id="contact_email" name="contact_email" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_location">Your District/City</label>
+                            <select id="contact_location" name="contact_location" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" required>
+                                <option value="">Select your district</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Cox's Bazar">Cox's Bazar</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Barisal">Barisal</option>
+                                <option value="Rangpur">Rangpur</option>
+                                <option value="Mymensingh">Mymensingh</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Bogura">Bogura</option>
+                                <option value="Jessore">Jessore</option>
+                                <option value="Other">Other District</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_subject">Subject</label>
+                            <select id="contact_subject" name="contact_subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" required>
+                                <option value="">Select inquiry type</option>
+                                <option value="Booking Inquiry">Booking Inquiry</option>
+                                <option value="Pricing Information">Pricing Information</option>
+                                <option value="Vehicle Availability">Vehicle Availability</option>
+                                <option value="Corporate Booking">Corporate Booking</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Partnership">Partnership Opportunity</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <label class="block mb-2 font-semibold text-gray-700" for="contact_message">Your Message</label>
+                            <textarea id="contact_message" name="contact_message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Please provide details about your inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-3 bg-orange-500 text-white text-lg font-bold rounded-lg hover:bg-orange-600 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Office Information -->
+                <div class="space-y-8">
+                    
+                    <!-- Main Office -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-building text-orange-500 mr-2"></i>
+                            Main Office - Dhaka
+                        </h3>
+                        <div class="space-y-3 text-gray-600">
+                            <p><i class="fas fa-map-marker-alt text-orange-500 mr-2"></i> House #45, Road #12, Dhanmondi, Dhaka-1209</p>
+                            <p><i class="fas fa-phone text-orange-500 mr-2"></i> +880-1885478700</p>
+                            <p><i class="fas fa-clock text-orange-500 mr-2"></i> Open 24/7</p>
+                        </div>
+                    </div>
+
+                    <!-- Regional Offices -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">
+                            <i class="fas fa-map text-orange-500 mr-2"></i>
+                            Regional Offices
+                        </h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-orange-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Chittagong Office</h4>
+                                <p class="text-gray-600 text-sm">Agrabad Commercial Area, Chittagong</p>
+                                <p class="text-gray-600 text-sm">Phone: 01885478701</p>
+                            </div>
+                            <div class="border-l-4 border-blue-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Sylhet Office</h4>
+                                <p class="text-gray-600 text-sm">Zindabazar, Sylhet</p>
+                                <p class="text-gray-600 text-sm">Phone: 01885478702</p>
+                            </div>
+                            <div class="border-l-4 border-green-500 pl-4">
+                                <h4 class="font-semibold text-gray-800">Cox's Bazar Office</h4>
+                                <p class="text-gray-600 text-sm">Hotel Motel Zone, Cox's Bazar</p>
+                                <p class="text-gray-600 text-sm">Phone: 01885478703</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Hours -->
+                    <div class="bg-gradient-to-br from-orange-500 to-red-500 p-6 rounded-xl text-white">
+                        <h3 class="text-xl font-bold mb-4">
+                            <i class="fas fa-clock mr-2"></i>
+                            Service Hours
+                        </h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Phone Support:</span>
+                                <span class="font-semibold">24/7</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>WhatsApp:</span>
+                                <span class="font-semibold">24/7</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Email Response:</span>
+                                <span class="font-semibold">Within 2 hours</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Office Visit:</span>
+                                <span class="font-semibold">9 AM - 9 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Areas Map -->
+    <div class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Service Coverage</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                
+                <!-- Dhaka Division -->
+                <div class="bg-blue-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-blue-800 mb-3">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Dhaka Division
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Dhaka Metropolitan</li>
+                        <li>• Gazipur</li>
+                        <li>• Narayanganj</li>
+                        <li>• Manikganj</li>
+                        <li>• Munshiganj</li>
+                        <li>• Narsingdi</li>
+                        <li>• Tangail</li>
+                        <li>• Faridpur</li>
+                    </ul>
+                </div>
+
+                <!-- Chittagong Division -->
+                <div class="bg-green-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-green-800 mb-3">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Chittagong Division
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Chittagong Metropolitan</li>
+                        <li>• Cox's Bazar</li>
+                        <li>• Rangamati</li>
+                        <li>• Bandarban</li>
+                        <li>• Khagrachhari</li>
+                        <li>• Feni</li>
+                        <li>• Lakshmipur</li>
+                        <li>• Noakhali</li>
+                    </ul>
+                </div>
+
+                <!-- Sylhet Division -->
+                <div class="bg-purple-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-purple-800 mb-3">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Sylhet Division
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Sylhet Metropolitan</li>
+                        <li>• Moulvibazar</li>
+                        <li>• Habiganj</li>
+                        <li>• Sunamganj</li>
+                        <li>• Sreemangal</li>
+                        <li>• Barlekha</li>
+                        <li>• Kulaura</li>
+                        <li>• Rajnagar</li>
+                    </ul>
+                </div>
+
+                <!-- Other Divisions -->
+                <div class="bg-orange-50 p-6 rounded-xl">
+                    <h3 class="text-lg font-bold text-orange-800 mb-3">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Other Areas
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-1">
+                        <li>• Rajshahi Division</li>
+                        <li>• Khulna Division</li>
+                        <li>• Barisal Division</li>
+                        <li>• Rangpur Division</li>
+                        <li>• Mymensingh Division</li>
+                        <li>• And 20+ more districts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Quick Questions</h2>
+            <div class="space-y-4">
+                
+                <div class="bg-white rounded-lg shadow p-4">
+                    <button onclick="toggleContactFaq(1)" class="flex items-center w-full text-left focus:outline-none">
+                        <span id="contactIcon1" class="text-orange-600 text-xl mr-4"><i class="fas fa-plus-circle"></i></span>
+                        <span class="font-bold text-lg text-gray-800">How can I book a car for tomorrow?</span>
+                    </button>
+                    <div id="contactAnswer1" class="mt-2 ml-9 text-gray-600 text-base hidden">
+                        You can book instantly via WhatsApp (+880-1885478700), call us, or use our online booking form. We accept last-minute bookings based on availability.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4">
+                    <button onclick="toggleContactFaq(2)" class="flex items-center w-full text-left focus:outline-none">
+                        <span id="contactIcon2" class="text-orange-600 text-xl mr-4"><i class="fas fa-plus-circle"></i></span>
+                        <span class="font-bold text-lg text-gray-800">Do you provide cars outside Dhaka?</span>
+                    </button>
+                    <div id="contactAnswer2" class="mt-2 ml-9 text-gray-600 text-base hidden">
+                        Yes! We serve all 64 districts of Bangladesh. Our vehicles are available in major cities and we can arrange pickups from rural areas too.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4">
+                    <button onclick="toggleContactFaq(3)" class="flex items-center w-full text-left focus:outline-none">
+                        <span id="contactIcon3" class="text-orange-600 text-xl mr-4"><i class="fas fa-plus-circle"></i></span>
+                        <span class="font-bold text-lg text-gray-800">What payment methods do you accept?</span>
+                    </button>
+                    <div id="contactAnswer3" class="mt-2 ml-9 text-gray-600 text-base hidden">
+                        We accept Cash, bKash, Nagad, Rocket, and bank transfers. Payment can be made at pickup or online in advance.
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow p-4">
+                    <button onclick="toggleContactFaq(4)" class="flex items-center w-full text-left focus:outline-none">
+                        <span id="contactIcon4" class="text-orange-600 text-xl mr-4"><i class="fas fa-plus-circle"></i></span>
+                        <span class="font-bold text-lg text-gray-800">Are drivers included in all rentals?</span>
+                    </button>
+                    <div id="contactAnswer4" class="mt-2 ml-9 text-gray-600 text-base hidden">
+                        Yes, all our rentals come with professional, experienced drivers. Self-driving is not available as per our company policy.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Contact -->
+    <div class="py-12 bg-red-600">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-2xl font-bold text-white mb-4">
+                <i class="fas fa-exclamation-triangle mr-2"></i>
+                Emergency Support
+            </h2>
+            <p class="text-red-100 mb-6">
+                Need urgent assistance during your trip? We're available 24/7 for emergencies.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:01885478700" class="bg-white text-red-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Emergency Hotline: 01885478700
+                </a>
+                <a href="https://wa.me/8801885478700" class="bg-green-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-600 transition-colors">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp Support
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Tripizo</h2>
+                    <p class="text-gray-400">We are best at providing reliable and affordable car rentals for your journey.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Useful Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-orange-400 transition-colors">Home</a></li>
+                        <li><a href="vehicles.html" class="hover:text-orange-400 transition-colors">Vehicles</a></li>
+                        <li><a href="about.html" class="hover:text-orange-400 transition-colors">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-orange-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-orange-400">Contact</h2>
+                    <ul class="space-y-2">
+                        <li><i class="fas fa-phone-alt mr-2 text-orange-400"></i> 01642008569</li>
+                        <li><i class="fab fa-whatsapp mr-2 text-green-400"></i> 01642008569</li>
+                        <li><i class="fas fa-envelope mr-2 text-blue-400"></i> tripizo32@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400 text-2xl transition-colors"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Contact Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('contact_name').value.trim();
+            const phone = document.getElementById('contact_phone').value.trim();
+            const location = document.getElementById('contact_location').value;
+            const subject = document.getElementById('contact_subject').value;
+            const message = document.getElementById('contact_message').value.trim();
+            
+            // Basic validation
+            if (name.length < 2) {
+                alert('Please enter a valid name.');
+                return;
+            }
+            
+            if (!/^01[0-9]{9}$/.test(phone)) {
+                alert('Please enter a valid Bangladeshi phone number (01XXXXXXXXX).');
+                return;
+            }
+            
+            if (!location) {
+                alert('Please select your district.');
+                return;
+            }
+            
+            if (!subject) {
+                alert('Please select an inquiry type.');
+                return;
+            }
+            
+            if (message.length < 10) {
+                alert('Please provide more details in your message.');
+                return;
+            }
+            
+            // Show success message
+            alert('Thank you for contacting us! We will get back to you within 2 hours.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // FAQ Toggle Function
+        function toggleContactFaq(n) {
+            for (let i = 1; i <= 4; i++) {
+                if (i === n) {
+                    let ans = document.getElementById('contactAnswer' + i);
+                    let icon = document.getElementById('contactIcon' + i).children[0];
+                    if (ans.classList.contains('hidden')) {
+                        ans.classList.remove('hidden');
+                        icon.classList.remove('fa-plus-circle');
+                        icon.classList.add('fa-minus-circle');
+                    } else {
+                        ans.classList.add('hidden');
+                        icon.classList.remove('fa-minus-circle');
+                        icon.classList.add('fa-plus-circle');
+                    }
+                } else {
+                    document.getElementById('contactAnswer' + i).classList.add('hidden');
+                    let otherIcon = document.getElementById('contactIcon' + i).children[0];
+                    otherIcon.classList.remove('fa-minus-circle');
+                    otherIcon.classList.add('fa-plus-circle');
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
+                
