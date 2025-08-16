@@ -2,21 +2,21 @@
 session_start();
 include 'connect.php';
 
-// Check if user is logged in
+
 if (!isset($_SESSION['email'])) {
     header("Location: Login.html");
     exit();
 }
 
-// Get the logged-in user's email
+
 $email = $_SESSION['email'];
 
 
-// Fetch user data by email
+
 $result = mysqli_query($conn, "SELECT * FROM user_info WHERE email='$email' LIMIT 1");
 $user = mysqli_fetch_assoc($result);
 
-// Fetch booking data by email
+
 $phone = $user['phone_number'];
 $booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phone' AND status != 'Cancelled'");
 ?>
