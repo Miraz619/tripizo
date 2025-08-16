@@ -70,7 +70,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳4,500</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳5,200</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳4,800</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳7,500</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳8,500</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳12,000</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳18,000</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳3,800</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -269,7 +269,7 @@
                                 <span class="text-2xl font-bold text-orange-500">৳25,000</span>
                                 <span class="text-gray-500">/day</span>
                             </div>
-                            <a href="booking.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
+                            <a href="booking.php" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</a>
                         </div>
                     </div>
                 </div>

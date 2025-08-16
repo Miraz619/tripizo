@@ -26,6 +26,8 @@ $booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phon
     <meta charset="UTF-8">
     <title>User Profile - Tripizo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         body {
             background: #f3f4f6;
@@ -33,50 +35,8 @@ $booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phon
             margin: 0;
             padding: 0;
         }
-        .navbar {
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            padding: 0.5rem 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar h1 {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #000000ff;
-            display: flex;
-            align-items: center;
-        }
-        .navbar h1 i {
-            margin-right: 8px;
-            color: #070000ff;
-        }
-        .navbar .nav-links a {
-            margin: 0 1rem;
-            font-weight: bold;
-            color: #374151;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        .navbar .nav-links a:hover {
-            color: #ef4444;
-        }
-        .navbar .profile-btn {
-            margin-left: 2rem;
-        }
-        .navbar .profile-btn a {
-            background: #3b82f6;
-            color: #fff;
-            padding: 0.5rem 1.5rem;
-            border-radius: 999px;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background 0.2s;
-        }
-        .navbar .profile-btn a:hover {
-            background: #ef4444;
-        }
+      
+       
         .profile-bg {
             min-height: 100vh;
             display: flex;
@@ -172,21 +132,9 @@ $booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phon
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <h1><i class="fas fa-car"></i>Tripizo</h1>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#">Vehicles</a>
-            <a href="details.html">Details</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <div class="profile-btn">
-            <a href="Profile.php">Profile</a>
-        </div>
-    </div>
+    
 
-
+                <?php include 'nav.php'; ?>
 
     
     <div class="profile-bg">
