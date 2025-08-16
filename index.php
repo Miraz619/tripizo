@@ -1,3 +1,6 @@
+<?php include 'nav.php'; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,208 +15,161 @@
 <body class="font-sans">
 
 
-    <div class="h-15 flex justify-between   items-center ">
-    
-        <div>
-      <h1 class="text-xl font-bold" >
-        <i class="fas fa-car text-black-500 ml-4"></i>
-         <span>Tripizo</span>
-        </h1>
-
-        </div>
-
-        
-            <div class="flex gap-10">
-            <a href="#" class="text-base font-bold hover:text-red">Home</a>
-            <a href="vehicles.html" class="text-base font-bold">Vehicles</a>
-            <a href="#" class="text-base font-bold">Details</a>
-            <a href="about.html" class="text-base font-bold">About Us</a>
-            <a href="contact.html" class="text-base font-bold">Contact Us</a>
-                </div>
-   
-   <div class="mr-6 ">
-     <a href="#" class=" bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500 text-blue-200">LOG IN</a>
-    
-   </div>
-
-</div>
-    
-    
-   <div class="flex items-center justify-between ">
-            <div class="m-auto">
-
-              <h1 class="text-5xl font-bold mb-2 text-red-600 ">Your Journey, </h1> 
-              <h1 class="text-5xl font-bold mb-2"> Our Wheels</h1>
-              <p class="text-gray-700 font-bold text-sm mt-10">Rent the perfect car for your next trip. Fast, easy, and reliable – only with Tripizo!</p>
-
-
-            </div>
-
-           
-
-            <div class="p-8">
-  <img src="image/car1.png" alt="Car"
-       class="mt-10 transition-transform duration-800 hover:scale-110 hover:rotate-360 w-full h-auto object-contain">
+<div class="flex items-center justify-between ">
+    <div class="m-auto">
+        <h1 class="text-5xl font-bold mb-2 text-red-600 ">Your Journey, </h1> 
+        <h1 class="text-5xl font-bold mb-2"> Our Wheels</h1>
+        <p class="text-gray-700 font-bold text-sm mt-10">
+            Rent the perfect car for your next trip. Fast, easy, and reliable – only with Tripizo!
+        </p>
+    </div>
+    <div class="p-8">
+        <img src="image/car1.png" alt="Car"
+             class="mt-10 transition-transform duration-800 hover:scale-110 hover:rotate-10 w-full h-auto object-contain">
+    </div>
 </div>
 
 
-   </div>
 
-
-   
-   
-  <div class="bg-gray-700 h-70 py-8 ">
-
-
-      <div >
-
-         <h1 class="text-white text-5xl ml-25">Search Your Best Cars</h1>
-
-
-      </div>
-
-
-      <div class="flex justify-center gap-6 mt-8">
-
-        <select class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow">
-
-            <option>Brand</option>
-            <option>Toyota</option>
-            <option>Honda</option>
-            <option>Suzuki</option>
-            <option>Nissan</option>
-
-        </select>
-
-         <select class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow focus:outline-none">
-
-
-          <option>Any Type</option>
-          <option>Sedan</option>
-           <option>SUV</option>
-           <option>Microbus</option>
-         
-      <option>Luxury Sedan</option>
-            <option>Hiace</option>
-        
-          
-        </select>
-
-         <select class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow focus:outline-none">
-
-
-             <option>Price</option>
-              <option>Low to High</option>
-              <option>High to Low</option>
-
-
-        </select>
-
-        <button class="bg-green-500 py-4 px-6 rounded-lg font-bold text-white  hover:bg-green-600 transition-colors shadow">Search Now</button>
-      </div>
-
-
-      
-  </div>
-
-
- 
-<div class="py-12 bg-white">
-
-
+<div class="bg-gray-700 h-70 py-8 ">
   <div>
-   <h1 class="text-5xl font-bold text-gray-800 text-center mb-10 drop-shadow">
-  Our Top Picks
-</h1>
-
+     <h1 class="text-white text-5xl ml-25">Search Your Best Cars</h1>
   </div>
-  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-  
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+
+  <div class="flex justify-center gap-6 mt-8">
+    <select id="brandFilter" class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow">
+        <option value="">Brand</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Suzuki">Suzuki</option>
+        <option value="Nissan">Nissan</option>
+    </select>
+
+    <select id="typeFilter" class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow focus:outline-none">
+        <option value="">Any Type</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Microbus">Microbus</option>
+        <option value="Luxury Sedan">Luxury Sedan</option>
+        <option value="Hiace">Hiace</option>
+    </select>
+
+    <select id="priceFilter" class="w-65 px-6 py-4 rounded-md bg-white text-black font-medium shadow focus:outline-none">
+        <option value="">Price</option>
+        <option value="low-high">Low to High</option>
+        <option value="high-low">High to Low</option>
+    </select>
+
+    <button onclick="filterCars()" 
+      class="bg-green-500 py-4 px-6 rounded-lg font-bold text-white hover:bg-green-600 transition-colors shadow">
+      Search Now
+    </button>
+  </div>
+</div>
+
+
+
+<div class="py-12 bg-white">
+  <div>
+    <h1 class="text-5xl font-bold text-gray-800 text-center mb-10 drop-shadow">
+      Our Top Picks
+    </h1>
+  </div>
+
+  <div id="carList" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Toyota" data-type="Sedan" data-price="6000">
       <img src="image/png1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">TOYOTA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳6000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
 
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Toyota" data-type="SUV" data-price="7500">
       <img src="image/png2.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">TOYOTA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳7500+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
-   
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+
+  
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Honda" data-type="Luxury Sedan" data-price="10000">
       <img src="image/honda1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">HONDA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳10000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
-   
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Honda" data-type="Sedan" data-price="15000">
       <img src="image/honda2.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">HONDA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳15000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
- 
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+
+   
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Suzuki" data-type="Microbus" data-price="8500">
       <img src="image/suzuki1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">SUZUKI</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳8500</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
-   
-    <div class="bg-white rounded shadow p-6 flex flex-col items-center">
+
+    <div class="car-card bg-white rounded shadow p-6 flex flex-col items-center"
+         data-brand="Nissan" data-type="Hiace" data-price="90000">
       <img src="image/nissan.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">NISSAN CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳90000</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
+
   </div>
 </div>
 
 
-<div class="bg-gray-100 py-16">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12 drop-shadow">What Our Customers Say</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-     
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-orange-50">
-        <img src="image/review (1).jpg" alt="Reviewer 1" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Kamruzzaman Nadim</h3>
-        <p class="text-gray-500 text-center mb-4">“Tripizo made my Dhaka trip so much easier! The car was clean and the service was excellent. Highly recommend!”</p>
-        <div class="flex space-x-1 text-orange-400 text-xl">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-        </div>
-      </div>
-      
-     
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-orange-50">
-        <img src="image/review (2).jpg" alt="Reviewer 2" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Riad Miskat</h3>
-        <p class="text-gray-500 text-center mb-4">“Best rental experience I’ve ever had. Easy booking and very friendly driver. Will use Tripizo again!”</p>
-        <div class="flex space-x-1 text-orange-400 text-xl">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        </div>
-      </div>
-      
-      
-      <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-orange-50">
-        <img src="image/review (3).jpg" alt="Reviewer 3" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
-        <h3 class="font-bold text-lg text-gray-800 mb-2">Miraz Hossain</h3>
-        <p class="text-gray-500 text-center mb-4">“On time and reliable. I felt safe and comfortable throughout my journey. Great job, Tripizo!”</p>
-        <div class="flex space-x-1 text-orange-400 text-xl">
-          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
+
+<script>
+function filterCars() {
+  let brand = document.getElementById("brandFilter").value;
+  let type = document.getElementById("typeFilter").value;
+  let priceOrder = document.getElementById("priceFilter").value;
+
+  let cars = Array.from(document.querySelectorAll(".car-card"));
 
 
+  cars.forEach(car => {
+    let carBrand = car.getAttribute("data-brand");
+    let carType = car.getAttribute("data-type");
+
+    let brandMatch = !brand || carBrand === brand;
+    let typeMatch = !type || carType === type;
+
+    if (brandMatch && typeMatch) {
+      car.style.display = "flex";
+    } else {
+      car.style.display = "none";
+    }
+  });
+
+
+  let carList = document.getElementById("carList");
+  let visibleCars = cars.filter(c => c.style.display !== "none");
+
+  if (priceOrder === "low-high") {
+    visibleCars.sort((a, b) => a.getAttribute("data-price") - b.getAttribute("data-price"));
+  } else if (priceOrder === "high-low") {
+    visibleCars.sort((a, b) => b.getAttribute("data-price") - a.getAttribute("data-price"));
+  }
+
+  visibleCars.forEach(c => carList.appendChild(c));
+}
+</script>
 
 
 
@@ -350,12 +306,6 @@
     </div>
   </div>
 </footer>
-
-
-
-
-
-
 
 </body>
 </html>

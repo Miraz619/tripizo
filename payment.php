@@ -13,24 +13,7 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-<!-- HEADER -->
-<div class="h-15 flex justify-between items-center bg-white shadow p-4">
-  <div>
-    <h1 class="text-xl font-bold">
-      <i class="fas fa-car text-black-500 ml-4"></i> Tripizo
-    </h1>
-  </div>
-  <div class="flex gap-10">
-    <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
-    <a href="vehicles.html" class="text-base font-bold hover:text-red-500">Vehicles</a>
-    <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
-    <a href="about.html" class="text-base font-bold hover:text-red-500">About Us</a>
-    <a href="contact.html" class="text-base font-bold hover:text-red-500">Contact Us</a>
-  </div>
-  <div class="mr-6">
-    <a href="Login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
-  </div>
-</div>
+       <?php include 'nav.php'; ?>
 
 <!-- PAGE HEADER -->
 <div class="py-8 bg-gradient-to-r from-green-600 to-blue-600">

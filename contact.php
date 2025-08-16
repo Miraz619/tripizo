@@ -10,27 +10,9 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <!-- Header -->
-    <div class="h-15 flex justify-between items-center">
-        <div>
-            <h1 class="text-xl font-bold">
-                <i class="fas fa-car text-black-500 ml-4"></i>
-                <span>Tripizo</span>
-            </h1>
-        </div>
-        <div class="flex gap-10">
-            <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
-            <a href="vehicles.html" class="text-base font-bold hover:text-red-500">Vehicles</a>
-            <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
-            <a href="about.html" class="text-base font-bold hover:text-red-500">About Us</a>
-            <a href="contact.html" class="text-base font-bold text-orange-500">Contact Us</a>
-        </div>
-        <div class="mr-6">
-            <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
-        </div>
-    </div>
+        <?php include 'nav.php'; ?>
 
-    <!-- Hero Section -->
+ 
     <div class="py-16 bg-gradient-to-r from-green-600 to-blue-600">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h1 class="text-5xl font-bold text-white mb-6">Get In Touch</h1>
@@ -41,7 +23,7 @@
         </div>
     </div>
 
-    <!-- Contact Options -->
+    
     <div class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -84,12 +66,12 @@
         </div>
     </div>
 
-    <!-- Contact Form & Office Info -->
+    
     <div class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 
-                <!-- Contact Form -->
+               
                 <div class="bg-white p-8 rounded-xl shadow-lg">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
                     <form id="contactForm">
@@ -154,10 +136,10 @@
                     </form>
                 </div>
 
-                <!-- Office Information -->
+              
                 <div class="space-y-8">
                     
-                    <!-- Main Office -->
+                  
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">
                             <i class="fas fa-building text-orange-500 mr-2"></i>
@@ -170,7 +152,7 @@
                         </div>
                     </div>
 
-                    <!-- Regional Offices -->
+                
                     <div class="bg-white p-6 rounded-xl shadow-lg">
                         <h3 class="text-xl font-bold text-gray-800 mb-4">
                             <i class="fas fa-map text-orange-500 mr-2"></i>
@@ -195,7 +177,7 @@
                         </div>
                     </div>
 
-                    <!-- Service Hours -->
+                   
                     <div class="bg-gradient-to-br from-orange-500 to-red-500 p-6 rounded-xl text-white">
                         <h3 class="text-xl font-bold mb-4">
                             <i class="fas fa-clock mr-2"></i>
@@ -225,13 +207,13 @@
         </div>
     </div>
 
-    <!-- Service Areas Map -->
+
     <div class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Service Coverage</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 
-                <!-- Dhaka Division -->
+              
                 <div class="bg-blue-50 p-6 rounded-xl">
                     <h3 class="text-lg font-bold text-blue-800 mb-3">
                         <i class="fas fa-map-marker-alt mr-2"></i>Dhaka Division
@@ -248,7 +230,7 @@
                     </ul>
                 </div>
 
-                <!-- Chittagong Division -->
+              
                 <div class="bg-green-50 p-6 rounded-xl">
                     <h3 class="text-lg font-bold text-green-800 mb-3">
                         <i class="fas fa-map-marker-alt mr-2"></i>Chittagong Division
@@ -265,7 +247,7 @@
                     </ul>
                 </div>
 
-                <!-- Sylhet Division -->
+              
                 <div class="bg-purple-50 p-6 rounded-xl">
                     <h3 class="text-lg font-bold text-purple-800 mb-3">
                         <i class="fas fa-map-marker-alt mr-2"></i>Sylhet Division
@@ -282,7 +264,7 @@
                     </ul>
                 </div>
 
-                <!-- Other Divisions -->
+                
                 <div class="bg-orange-50 p-6 rounded-xl">
                     <h3 class="text-lg font-bold text-orange-800 mb-3">
                         <i class="fas fa-map-marker-alt mr-2"></i>Other Areas
@@ -300,7 +282,7 @@
         </div>
     </div>
 
-    <!-- FAQ Section -->
+   
     <div class="py-16 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Quick Questions</h2>
@@ -350,7 +332,7 @@
         </div>
     </div>
 
-    <!-- Emergency Contact -->
+   
     <div class="py-12 bg-red-600">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h2 class="text-2xl font-bold text-white mb-4">
@@ -371,7 +353,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-200 py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -407,18 +388,18 @@
     </footer>
 
     <script>
-        // Contact Form Validation
+       
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Get form values
+           
             const name = document.getElementById('contact_name').value.trim();
             const phone = document.getElementById('contact_phone').value.trim();
             const location = document.getElementById('contact_location').value;
             const subject = document.getElementById('contact_subject').value;
             const message = document.getElementById('contact_message').value.trim();
             
-            // Basic validation
+            
             if (name.length < 2) {
                 alert('Please enter a valid name.');
                 return;
@@ -444,14 +425,14 @@
                 return;
             }
             
-            // Show success message
+          
             alert('Thank you for contacting us! We will get back to you within 2 hours.');
             
-            // Reset form
+          
             this.reset();
         });
 
-        // FAQ Toggle Function
+      
         function toggleContactFaq(n) {
             for (let i = 1; i <= 4; i++) {
                 if (i === n) {

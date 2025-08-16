@@ -9,27 +9,10 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <!-- Header -->
-    <div class="h-15 flex justify-between items-center">
-        <div>
-            <h1 class="text-xl font-bold">
-                <i class="fas fa-car text-black-500 ml-4"></i>
-                <span>Tripizo</span>
-            </h1>
-        </div>
-        <div class="flex gap-10">
-            <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
-            <a href="vehicles.html" class="text-base font-bold hover:text-red-500">Vehicles</a>
-            <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
-            <a href="about.html" class="text-base font-bold text-orange-500">About Us</a>
-            <a href="contact.html" class="text-base font-bold hover:text-red-500">Contact Us</a>
-        </div>
-        <div class="mr-6">
-            <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
-        </div>
-    </div>
 
-    <!-- Hero Section -->
+
+    <?php include 'nav.php'; ?>
+   
     <div class="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h1 class="text-5xl font-bold text-white mb-6">About Tripizo</h1>
@@ -40,7 +23,7 @@
         </div>
     </div>
 
-    <!-- Our Story -->
+    
     <div class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -70,7 +53,7 @@
         </div>
     </div>
 
-    <!-- Mission & Vision -->
+   
     <div class="py-16 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -100,7 +83,7 @@
         </div>
     </div>
 
-    <!-- Our Values -->
+   
     <div class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Core Values</h2>
@@ -137,7 +120,7 @@
         </div>
     </div>
 
-    <!-- Our Coverage -->
+ 
     <div class="py-16 bg-gradient-to-r from-green-500 to-teal-600">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-white mb-12">Where We Serve</h2>
@@ -182,7 +165,7 @@
         </div>
     </div>
 
-    <!-- Statistics -->
+  
     <div class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Achievements</h2>
@@ -211,26 +194,26 @@
         </div>
     </div>
 
-    <!-- Team Section -->
+    
     <div class="py-16 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Meet Our Team</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Team Member 1 -->
+           
             <div class="bg-white p-6 rounded shadow flex flex-col items-center">
                 <img src="image/review (1).jpg" alt="Md. Kamrozzaman Nadim" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
                 <h3 class="font-bold text-xl mb-2 text-gray-900">Md. Kamrozzaman Nadim</h3>
                 <p class="text-orange-500 font-semibold mb-2">Co-Founder & CEO</p>
                 <p class="text-gray-600 text-sm text-center">Passionate about connecting Bangladesh through better transportation</p>
             </div>
-            <!-- Team Member 2 -->
+           
             <div class="bg-white p-6 rounded shadow flex flex-col items-center">
                 <img src="image/review (3).jpg" alt="Miraz Hossain" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
                 <h3 class="font-bold text-xl mb-2 text-gray-900">Miraz Hossain</h3>
                 <p class="text-orange-500 font-semibold mb-2">Co-Founder & COO</p>
                 <p class="text-gray-600 text-sm text-center">Ensuring smooth operations across all our service areas</p>
             </div>
-            <!-- Team Member 3 -->
+        
             <div class="bg-white p-6 rounded shadow flex flex-col items-center">
                 <img src="image/review (2).jpg" alt="Miskat Rasid Riad" class="w-24 h-24 rounded-full shadow mb-4 object-cover border-4 border-orange-100">
                 <h3 class="font-bold text-xl mb-2 text-gray-900">Miskat Rasid Riad</h3>
@@ -242,7 +225,7 @@
 </div>
 
 
-    <!-- Call to Action -->
+
     <div class="py-16 bg-orange-500">
         <div class="max-w-4xl mx-auto text-center px-4">
             <h2 class="text-3xl font-bold text-white mb-4">Ready to Experience Tripizo?</h2>
@@ -260,7 +243,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+ 
     <footer class="bg-gray-900 text-gray-200 py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

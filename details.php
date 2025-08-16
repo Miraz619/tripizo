@@ -1,3 +1,4 @@
+    <?php include 'nav.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,35 +10,11 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-  <div class="h-15 flex justify-between   items-center ">
-    
-        <div>
-      <h1 class="text-xl font-bold" >
-        <i class="fas fa-car text-black-500 ml-4"></i>
-         <span>Tripizo</span>
-        </h1>
-
-        </div>
-
-        
-            <div class="flex gap-10">
-            <a href="index.html" class="text-base font-bold hover:text-red">Home</a>
-            <a href="#" class="text-base font-bold">Vehicles</a>
-            <a href="#" class="text-base font-bold">Details</a>
-            <a href="#" class="text-base font-bold">About Us</a>
-            <a href="#" class="text-base font-bold">Contact Us</a>
-                </div>
-   
-   <div class="mr-6 ">
-     <a href="#" class=" bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500 text-blue-200">LOG IN</a>
-    
-   </div>
-
-</div>
+ 
 
   <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 md:p-12 mt-10 mb-20">
 
-    <!-- 1. Why Choose Tripizo? -->
+ 
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-orange-500 mb-3">Why Choose Tripizo?</h2>
       <p class="text-gray-700">
@@ -46,7 +23,7 @@
       </p>
     </section>
 
-    <!-- 2. How Our Rental Works -->
+
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-orange-500 mb-3">How Our Rental System Works</h2>
       <div class="flex flex-col md:flex-row md:items-center gap-6 text-gray-700">
@@ -66,7 +43,7 @@
       </div>
     </section>
 
-    <!-- 3. Rental Policies -->
+
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-orange-500 mb-3">Rental Policies</h2>
       <ul class="list-disc list-inside text-gray-700 space-y-2">
@@ -82,7 +59,7 @@
       </ul>
     </section>
 
-    <!-- 4. Service Coverage -->
+ 
     <section class="mb-10">
       <h2 class="text-2xl font-bold text-orange-500 mb-3">Service Coverage</h2>
       <p class="text-gray-700 mb-2">Tripizo offers chauffeur-driven rentals in all major cities and airports in Bangladesh, including:</p>
