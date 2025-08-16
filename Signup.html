@@ -9,46 +9,38 @@
 <body>
     <div class="signup-container">
         <h2>Create Your Tripizo Account</h2>
-        <form>
-            <label for="fullname">Full Name</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Enter Your full Name " required>
+        <form action="add.php" method="post" id="signupForm">
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" required>
 
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your 11 digit phone number" required>
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number" required>
 
             <label for="dob">Date of Birth</label>
             <input type="date" id="dob" name="dob" required>
 
-            <label for="nid">National ID / Passport Number <span class="optional">(optional at signup)</span></label>
-            <input type="text" id="nid" name="nid" placeholder="Optional">
+            <label for="n_id">National ID / Passport Number</label>
+            <input type="text" id="n_id" name="n_id">
 
-            <label for="permanent-address">Permanent Address</label>
-            <textarea id="permanent-address" name="permanent-address" rows="2" required></textarea>
+            <label for="permanent_address">Permanent Address</label>
+            <textarea id="permanent_address" name="permanent_address" rows="2" required></textarea>
 
-            <label for="current-address">Current/Temporary Address</label>
-            <textarea id="current-address" name="current-address" rows="2" required></textarea>
+            <label for="current_address">Current/Temporary Address</label>
+            <textarea id="current_address" name="current_address" rows="2" required></textarea>
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
-            <br> <br>
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter Your Password" required>
-            <br> <br>
+            <input type="password" id="password" name="password" required>
 
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
             
 
-            <label for="profile-photo">Profile Photo</label>
-            <input type="file" id="profile-photo" name="profile-photo" accept="image/*">
-
-
-
-
-            <button type="submit">Sign Up</button>
-            <script src="Signup.js"></script>
+            <button type="submit" " >Sign Up</button>
         </form>
+        <script src="Signup.js"></script>
         <div class="login-link">
             Already have an account? <a href="Login.html">Login</a>
         </div>
