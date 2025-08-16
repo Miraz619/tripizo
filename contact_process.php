@@ -21,13 +21,14 @@ $subject = $conn->real_escape_string($_POST['contact_subject']);
 $message = $conn->real_escape_string($_POST['contact_message']);
 
 
-$sql = "INSERT INTO contacts (name, phone, email, location, subject, message)
-        VALUES ('$name', '$phone', '$email', '$location', '$subject', '$message')";
+$sql = "INSERT INTO contacts (name, phone, email, location, subject, message, status)
+        VALUES ('$name', '$phone', '$email', '$location', '$subject', '$message', 'new')";
+
 
 if ($conn->query($sql) === TRUE) {
     echo "<script>
         alert('Thank you! Your message has been submitted.');
-        window.location.href = 'contact.html';
+        window.location.href = 'contact.php';
     </script>";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;

@@ -74,7 +74,7 @@
                
                 <div class="bg-white p-8 rounded-xl shadow-lg">
                     <h2 class="text-2xl font-bold text-gray-800 mb-6">Send us a Message</h2>
-                    <form id="contactForm">
+                    <form id="contactForm" action="contact_process.php" method="POST">
                         <div class="mb-6">
                             <label class="block mb-2 font-semibold text-gray-700" for="contact_name">Your Name</label>
                             <input type="text" id="contact_name" name="contact_name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter your full name" required>
@@ -390,7 +390,7 @@
     <script>
        
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+           
             
            
             const name = document.getElementById('contact_name').value.trim();
