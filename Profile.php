@@ -1,9 +1,24 @@
 <?php
+session_start();
 include 'connect.php';
 
-// Fetch the latest user (change query if you want to fetch by session/email)
-$result = mysqli_query($conn, "SELECT * FROM user_info ORDER BY id DESC LIMIT 1");
+// Check if user is logged in
+if (!isset($_SESSION['email'])) {
+    header("Location: Login.html");
+    exit();
+}
+
+// Get the logged-in user's email
+$email = $_SESSION['email'];
+
+
+// Fetch user data by email
+$result = mysqli_query($conn, "SELECT * FROM user_info WHERE email='$email' LIMIT 1");
 $user = mysqli_fetch_assoc($result);
+
+// Fetch booking data by email
+$phone = $user['phone_number'];
+$booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phone' AND status != 'Cancelled'");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,7 +87,7 @@ $user = mysqli_fetch_assoc($result);
         }
         .profile-container {
             width: 100%;
-            max-width: 420px;
+            max-width: 520px;
             background: #fff;
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(0,0,0,0.10);
@@ -126,10 +141,35 @@ $user = mysqli_fetch_assoc($result);
             color: #3b82f6;
             text-decoration: none;
             font-weight: bold;
-           
+        }
+        .booking-table {
+            margin-top: 40px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .booking-table th, .booking-table td {
+            border: 1px solid #e5e7eb;
+            padding: 10px 8px;
+            text-align: left;
+        }
+        .booking-table th {
+            background: #3b82f6;
+            color: #fff;
+            font-weight: bold;
+        }
+        .booking-table tr:nth-child(even) {
+            background: #f3f4f6;
+        }
+        .booking-table tr:hover {
+            background: #e0e7ff;
+        }
+        .no-booking {
+            color: #ef4444;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
-    
 </head>
 <body>
     <div class="navbar">
@@ -149,8 +189,7 @@ $user = mysqli_fetch_assoc($result);
         <div class="profile-container">
             <div class="profile-header">
                 <?php
-                    // Get first two letters of the user's name
-                    $initials = strtoupper(substr($user['full_name'], 0, 2));
+                    $initials = isset($user['full_name']) ? strtoupper(substr($user['full_name'], 0, 2)) : '';
                 ?>
                 <div class="profile-avatar">
                     <?php echo $initials; ?>
@@ -172,6 +211,28 @@ $user = mysqli_fetch_assoc($result);
                 <span><?php echo htmlspecialchars($user['current_address']); ?></span>
                 <label for="edit"><a href="edit.php">Edit</a></label>
             </div>
+            <!-- Booking Table -->
+            <h3 style="margin-top:40px; font-size:1.3em; color:#2563eb; text-align:center;">Your Bookings</h3>
+            <?php if ($booking_result && mysqli_num_rows($booking_result) > 0): ?>
+                <table class="booking-table">
+                    <tr>
+                        <th>Car Type</th>
+                        <th>Pickup Date</th>
+                        <th>Pickup Location</th>
+                        <th>Status</th>
+                    </tr>
+                    <?php while($booking = mysqli_fetch_assoc($booking_result)): ?>
+                        <tr>
+                            <td><?php echo htmlspecialchars($booking['car_type']); ?></td>
+                            <td><?php echo htmlspecialchars($booking['pickup_date']); ?></td>
+                            <td><?php echo htmlspecialchars($booking['pickup_location']); ?></td>
+                            <td><?php echo htmlspecialchars($booking['status']); ?></td>
+                        </tr>
+                    <?php endwhile; ?>
+                </table>
+            <?php else: ?>
+                <div class="no-booking">No bookings found for your account.</div>
+            <?php endif; ?>
         </div>
     </div>
 </body>
