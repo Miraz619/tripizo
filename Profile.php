@@ -185,6 +185,10 @@ $booking_result = mysqli_query($conn, "SELECT * FROM bookings WHERE phone='$phon
             <a href="Profile.php">Profile</a>
         </div>
     </div>
+
+
+
+    
     <div class="profile-bg">
         <div class="profile-container">
             <div class="profile-header">

@@ -233,10 +233,10 @@
                 Join thousands of satisfied customers who trust us for their transportation needs
             </p>
             <div class="space-x-4">
-                <a href="booking.html" class="bg-white text-orange-500 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
+                <a href="booking.php" class="bg-white text-orange-500 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
                     Book Now
                 </a>
-                <a href="contact.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-orange-500 transition-colors">
+                <a href="contact.php" class="border-2 border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-orange-500 transition-colors">
                     Contact Us
                 </a>
             </div>
