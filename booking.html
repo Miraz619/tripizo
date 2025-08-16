@@ -56,125 +56,44 @@
         
         <div class="mb-6">
           <label class="block mb-2 font-semibold text-gray-700" for="name">Your Name</label>
-          <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter your name" required>
+          <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter your name">
           <span id="nameError" class="text-red-500 text-sm"></span>
         </div>
        
         <div class="mb-6">
           <label class="block mb-2 font-semibold text-gray-700" for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="01XXXXXXXXX" required>
+          <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="01XXXXXXXXX">
           <span id="phoneError" class="text-red-500 text-sm"></span>
         </div>
       
         <div class="mb-6">
           <label class="block mb-2 font-semibold text-gray-700" for="car_type">Car Type</label>
-          <select id="car_type" name="car_type" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" required>
+          <select id="car_type" name="car_type" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50">
             <option value="">Select Car Type</option>
-            <option value="Toyota Axio" data-price="4500">Toyota Axio - ৳4,500/day</option>
-            <option value="Toyota Allion" data-price="5200">Toyota Allion - ৳5,200/day</option>
-            <option value="Toyota X-Corolla" data-price="4800">Toyota X-Corolla - ৳4,800/day</option>
-            <option value="Toyota Premio" data-price="7500">Toyota Premio - ৳7,500/day</option>
-            <option value="Toyota X-Noah" data-price="8500">Toyota X-Noah - ৳8,500/day</option>
-            <option value="Toyota Hiace" data-price="12000">Toyota Hiace - ৳12,000/day</option>
-            <option value="Honda Fit" data-price="3800">Honda Fit - ৳3,800/day</option>
-            <option value="Land Cruiser" data-price="25000">Land Cruiser - ৳25,000/day</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Microbus">Microbus</option>
+            <option value="Pickup">Pickup</option>
           </select>
           <span id="carTypeError" class="text-red-500 text-sm"></span>
         </div>
-<<<<<<< HEAD
         
-=======
-        <!-- Duration -->
-        <div class="mb-6">
-          <label class="block mb-2 font-semibold text-gray-700" for="duration">Duration (Days)</label>
-          <input type="number" id="duration" name="duration" min="1" max="30" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter number of days" value="1" required>
-          <span id="durationError" class="text-red-500 text-sm"></span>
-        </div>
-        <!-- Pickup Date -->
->>>>>>> main
         <div class="mb-6">
           <label class="block mb-2 font-semibold text-gray-700" for="pickup_date">Pickup Date</label>
-          <input type="date" id="pickup_date" name="pickup_date" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" required>
+          <input type="date" id="pickup_date" name="pickup_date" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50">
           <span id="dateError" class="text-red-500 text-sm"></span>
         </div>
-<<<<<<< HEAD
        
         <div class="mb-8">
-=======
-        <!-- Pickup Location -->
-        <div class="mb-6">
->>>>>>> main
           <label class="block mb-2 font-semibold text-gray-700" for="pickup_location">Pickup Location</label>
-          <input type="text" id="pickup_location" name="pickup_location" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter detailed pickup address" required>
+          <input type="text" id="pickup_location" name="pickup_location" class="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-orange-400 bg-gray-50" placeholder="Enter location">
           <span id="locationError" class="text-red-500 text-sm"></span>
         </div>
-<<<<<<< HEAD
        
         <button type="submit" class="w-full py-3 bg-orange-500 text-white text-lg font-bold rounded-lg hover:bg-orange-600 transition-colors">
-=======
-
-        <!-- Price Summary -->
-        <div id="priceSummary" class="mb-6 p-4 bg-orange-50 rounded-lg border hidden">
-          <h3 class="font-bold text-orange-800 mb-2">Booking Summary</h3>
-          <div class="space-y-1 text-sm">
-            <div class="flex justify-between">
-              <span>Vehicle:</span>
-              <span id="selectedVehicle" class="font-semibold">-</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Daily Rate:</span>
-              <span id="dailyRate" class="font-semibold">৳0</span>
-            </div>
-            <div class="flex justify-between">
-              <span>Duration:</span>
-              <span id="totalDays" class="font-semibold">1 day(s)</span>
-            </div>
-            <div class="flex justify-between border-t pt-2 mt-2">
-              <span class="font-bold">Total Amount:</span>
-              <span id="totalAmount" class="font-bold text-orange-600">৳0</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Book Now Button -->
-        <button type="submit" class="w-full py-3 bg-orange-500 text-white text-lg font-bold rounded-lg hover:bg-orange-600 transition-colors mb-4">
-          <i class="fas fa-calendar-check mr-2"></i>
->>>>>>> main
           Book Now
         </button>
-
-        <!-- Payment Button (Initially Hidden) -->
-        <button type="button" id="proceedToPayment" class="w-full py-3 bg-green-500 text-white text-lg font-bold rounded-lg hover:bg-green-600 transition-colors hidden">
-          <i class="fas fa-credit-card mr-2"></i>
-          Proceed to Payment
-        </button>
       </form>
-    </div>
-  </div>
-
-  <!-- Booking Success Modal -->
-  <div id="bookingModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-md w-full mx-4">
-      <div class="text-center">
-        <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-          <i class="fas fa-check text-white text-2xl"></i>
-        </div>
-        <h3 class="text-xl font-bold text-green-800 mb-2">Booking Confirmed!</h3>
-        <p class="text-gray-600 mb-4">Your booking request has been submitted successfully.</p>
-        <div class="text-sm text-gray-600 mb-6">
-          <p><strong>Booking Reference:</strong> <span id="bookingReference">TRP20240001</span></p>
-          <p><strong>Total Amount:</strong> <span id="modalTotalAmount">৳0</span></p>
-        </div>
-        <div class="space-y-3">
-          <button onclick="proceedToPayment()" class="w-full py-3 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600">
-            <i class="fas fa-credit-card mr-2"></i>
-            Proceed to Payment
-          </button>
-          <button onclick="closeModal()" class="w-full py-2 bg-gray-300 text-gray-700 font-bold rounded-lg hover:bg-gray-400">
-            Pay Later (Cash on Pickup)
-          </button>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -205,7 +124,7 @@
         <ul class="space-y-2">
           <li><i class="fas fa-phone-alt mr-2 text-orange-400"></i> 01642008569</li>
           <li><i class="fab fa-whatsapp mr-2 text-green-400"></i> 01642008569</li>
-          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> tripizo32@gmail.com</li>
+          <li><i class="fas fa-envelope mr-2 text-blue-400"></i> tirpizo32@gmail.com</li>
         </ul>
       </div>
     </div>
@@ -219,176 +138,6 @@
   </div>
 </footer>
 
-<script>
-// Set minimum date to today
-document.getElementById('pickup_date').min = new Date().toISOString().split('T')[0];
-
-// Store booking data
-let currentBooking = {};
-
-// Update price summary when car type or duration changes
-document.getElementById('car_type').addEventListener('change', updatePriceSummary);
-document.getElementById('duration').addEventListener('input', updatePriceSummary);
-
-function updatePriceSummary() {
-    const carSelect = document.getElementById('car_type');
-    const selectedOption = carSelect.options[carSelect.selectedIndex];
-    const carName = selectedOption.value;
-    const dailyPrice = parseInt(selectedOption.dataset.price) || 0;
-    const days = parseInt(document.getElementById('duration').value) || 1;
-    
-    const summaryDiv = document.getElementById('priceSummary');
-    
-    if (carName && dailyPrice > 0) {
-        summaryDiv.classList.remove('hidden');
-        
-        document.getElementById('selectedVehicle').textContent = carName;
-        document.getElementById('dailyRate').textContent = '৳' + dailyPrice.toLocaleString();
-        document.getElementById('totalDays').textContent = days + ' day(s)';
-        
-        const totalAmount = dailyPrice * days;
-        document.getElementById('totalAmount').textContent = '৳' + totalAmount.toLocaleString();
-        
-        // Store for later use
-        currentBooking.vehicle = carName;
-        currentBooking.dailyRate = dailyPrice;
-        currentBooking.duration = days;
-        currentBooking.totalAmount = totalAmount;
-    } else {
-        summaryDiv.classList.add('hidden');
-    }
-}
-
-// Form validation and submission
-document.getElementById('bookingForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Clear previous errors
-    document.querySelectorAll('.text-red-500').forEach(el => el.textContent = '');
-    
-    // Get form values
-    const name = document.getElementById('name').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const carType = document.getElementById('car_type').value;
-    const duration = document.getElementById('duration').value;
-    const pickupDate = document.getElementById('pickup_date').value;
-    const pickupLocation = document.getElementById('pickup_location').value.trim();
-    
-    let isValid = true;
-    
-    // Validation
-    if (!name || name.length < 2) {
-        document.getElementById('nameError').textContent = 'Please enter a valid name (at least 2 characters)';
-        isValid = false;
-    }
-    
-    if (!phone || !/^01[0-9]{9}$/.test(phone)) {
-        document.getElementById('phoneError').textContent = 'Please enter a valid Bangladeshi phone number (01XXXXXXXXX)';
-        isValid = false;
-    }
-    
-    if (!carType) {
-        document.getElementById('carTypeError').textContent = 'Please select a car type';
-        isValid = false;
-    }
-    
-    if (!duration || duration < 1 || duration > 30) {
-        document.getElementById('durationError').textContent = 'Duration must be between 1 and 30 days';
-        isValid = false;
-    }
-    
-    if (!pickupDate) {
-        document.getElementById('dateError').textContent = 'Please select a pickup date';
-        isValid = false;
-    } else {
-        const selectedDate = new Date(pickupDate);
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
-        
-        if (selectedDate < today) {
-            document.getElementById('dateError').textContent = 'Pickup date cannot be in the past';
-            isValid = false;
-        }
-    }
-    
-    if (!pickupLocation || pickupLocation.length < 5) {
-        document.getElementById('locationError').textContent = 'Please enter a detailed pickup location';
-        isValid = false;
-    }
-    
-    if (!isValid) {
-        return;
-    }
-    
-    // Store booking data
-    currentBooking = {
-        ...currentBooking,
-        name: name,
-        phone: phone,
-        carType: carType,
-        duration: parseInt(duration),
-        pickupDate: pickupDate,
-        pickupLocation: pickupLocation,
-        bookingReference: 'TRP' + Date.now().toString().slice(-6)
-    };
-    
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Processing...';
-    submitBtn.disabled = true;
-    
-    // Simulate API call delay
-    setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        
-        // Show success modal
-        showBookingSuccessModal();
-    }, 2000);
-});
-
-function showBookingSuccessModal() {
-    document.getElementById('bookingReference').textContent = currentBooking.bookingReference;
-    document.getElementById('modalTotalAmount').textContent = '৳' + currentBooking.totalAmount.toLocaleString();
-    document.getElementById('bookingModal').classList.remove('hidden');
-}
-
-function closeModal() {
-    document.getElementById('bookingModal').classList.add('hidden');
-    
-    // Reset form
-    document.getElementById('bookingForm').reset();
-    document.getElementById('priceSummary').classList.add('hidden');
-    
-    // Show thank you message
-    alert('Thank you! We will contact you within 30 minutes to confirm your booking. You can pay cash when the driver arrives.');
-}
-
-function proceedToPayment() {
-    // Close modal first
-    document.getElementById('bookingModal').classList.add('hidden');
-    
-    // Create URL parameters for payment page
-    const params = new URLSearchParams({
-        booking_id: currentBooking.bookingReference,
-        vehicle: currentBooking.carType,
-        duration: currentBooking.duration,
-        total: currentBooking.totalAmount,
-        customer_name: currentBooking.name,
-        customer_phone: currentBooking.phone,
-        pickup_date: currentBooking.pickupDate
-    });
-    
-    // Redirect to payment page
-    window.location.href = 'payment.html?' + params.toString();
-}
-
-// Initialize price summary on page load
-document.addEventListener('DOMContentLoaded', function() {
-    updatePriceSummary();
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
