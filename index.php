@@ -134,6 +134,7 @@
 
 
 
+
 <script>
 function filterCars() {
   let brand = document.getElementById("brandFilter").value;
@@ -281,10 +282,10 @@ function filterCars() {
       <div>
         <h2 class="text-2xl font-bold mb-4 text-orange-400">Useful Links</h2>
         <ul class="space-y-2">
-          <li><a href="#" class="hover:text-orange-400 transition-colors">Home</a></li>
-          <li><a href="#" class="hover:text-orange-400 transition-colors">Vehicles</a></li>
-          <li><a href="#" class="hover:text-orange-400 transition-colors">About Us</a></li>
-          <li><a href="#" class="hover:text-orange-400 transition-colors">Contact</a></li>
+          <li><a href="index.php" class="hover:text-orange-400 transition-colors">Home</a></li>
+          <li><a href="vehicles.php" class="hover:text-orange-400 transition-colors">Vehicles</a></li>
+          <li><a href="about.php" class="hover:text-orange-400 transition-colors">About Us</a></li>
+          <li><a href="contact.php" class="hover:text-orange-400 transition-colors">Contact</a></li>
         </ul>
       </div>
     
