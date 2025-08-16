@@ -1,3 +1,6 @@
+<?php include 'nav.php'; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,32 +15,6 @@
 <body class="font-sans">
 
 
-    <div class="h-15 flex justify-between   items-center ">
-    
-        <div>
-      <h1 class="text-xl font-bold" >
-        <i class="fas fa-car text-black-500 ml-4"></i>
-         <span>Tripizo</span>
-        </h1>
-
-        </div>
-
-        
-            <div class="flex gap-10">
-            <a href="#" class="text-base font-bold hover:text-red">Home</a>
-            <a href="vehicles.html" class="text-base font-bold">Vehicles</a>
-            <a href="#" class="text-base font-bold">Details</a>
-            <a href="about.html" class="text-base font-bold">About Us</a>
-            <a href="contact.html" class="text-base font-bold">Contact Us</a>
-                </div>
-   
-   <div class="mr-6 ">
-     <a href="#" class=" bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500 text-blue-200">LOG IN</a>
-    
-   </div>
-
-</div>
-    
     
    <div class="flex items-center justify-between ">
             <div class="m-auto">
@@ -53,7 +30,7 @@
 
             <div class="p-8">
   <img src="image/car1.png" alt="Car"
-       class="mt-10 transition-transform duration-800 hover:scale-110 hover:rotate-360 w-full h-auto object-contain">
+       class="mt-10 transition-transform duration-800 hover:scale-110 hover:rotate-10 w-full h-auto object-contain">
 </div>
 
 
@@ -133,42 +110,42 @@
       <img src="image/png1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">TOYOTA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳6000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
 
     <div class="bg-white rounded shadow p-6 flex flex-col items-center">
       <img src="image/png2.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">TOYOTA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳7500+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
    
     <div class="bg-white rounded shadow p-6 flex flex-col items-center">
       <img src="image/honda1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">HONDA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳10000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
    
     <div class="bg-white rounded shadow p-6 flex flex-col items-center">
       <img src="image/honda2.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">HONDA CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳15000+</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+      <a href="booking.php"><button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
  
     <div class="bg-white rounded shadow p-6 flex flex-col items-center">
       <img src="image/suzuki1.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">SUZUKI</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳8500</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+     <a href="booking.php"> <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
    
     <div class="bg-white rounded shadow p-6 flex flex-col items-center">
       <img src="image/nissan.png" alt="Car" class="h-40 object-contain mb-4">
       <h3 class="font-bold text-xl mb-2 text-gray-900">NISSAN CAR</h3>
       <p class="text-orange-500 font-semibold mb-4">Start per day ৳90000</p>
-      <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button>
+     <a href="booking.php"> <button class="bg-blue-500 text-white font-bold px-8 py-3 rounded hover:bg-orange-600 transition-colors">Book Now</button></a>
     </div>
   </div>
 </div>

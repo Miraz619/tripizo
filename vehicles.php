@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +11,15 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-    <!-- Header -->
-    <div class="h-15 flex justify-between items-center">
-        <div>
-            <h1 class="text-xl font-bold">
-                <i class="fas fa-car text-black-500 ml-4"></i>
-                <span>Tripizo</span>
-            </h1>
-        </div>
-        <div class="flex gap-10">
-            <a href="index.html" class="text-base font-bold hover:text-red-500">Home</a>
-            <a href="vehicles.html" class="text-base font-bold text-orange-500">Vehicles</a>
-            <a href="details.html" class="text-base font-bold hover:text-red-500">Details</a>
-            <a href="about.html" class="text-base font-bold hover:text-red-500">About Us</a>
-            <a href="contact.html" class="text-base font-bold hover:text-red-500">Contact Us</a>
-        </div>
-        <div class="mr-6">
-            <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500">LOG IN</a>
-        </div>
-    </div>
+     <?php include 'nav.php'; ?>
 
-    <!-- Hero Section -->
+   
     <div class="py-12 bg-gradient-to-r from-orange-500 to-red-500">
         <h1 class="text-5xl font-bold text-center text-white drop-shadow">Our Vehicle Fleet</h1>
         <p class="text-center text-orange-100 mt-4 text-lg">Choose from our extensive collection of well-maintained vehicles</p>
     </div>
 
-    <!-- Filter Section -->
+    
     <div class="bg-gray-800 py-8">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex flex-wrap justify-center gap-4">
@@ -61,12 +45,12 @@
         </div>
     </div>
 
-    <!-- Vehicles Grid -->
+    
     <div class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4">
             <div id="vehicleGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Toyota Axio -->
+               
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
                     <img src="image/axio.png" alt="Toyota Axio" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -91,7 +75,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota Allion -->
+                
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
                     <img src="image/allion.png" alt="Toyota Allion" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -116,7 +100,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota X-Corolla -->
+              
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
                     <img src="image/corolla.png" alt="Toyota X-Corolla" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -141,7 +125,6 @@
                     </div>
                 </div>
 
-                <!-- Toyota Premio -->
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="luxury" data-seats="5">
                     <img src="image/premio.png" alt="Toyota Premio" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -166,7 +149,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota X-Noah -->
+               
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="8">
                     <img src="image/noah.png" alt="Toyota X-Noah" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -191,7 +174,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota Hiace -->
+              
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="15">
                     <img src="image/hiace.png" alt="Toyota Hiace" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -216,7 +199,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota Coaster -->
+             
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="microbus" data-seats="28">
                     <img src="image/coaster.png" alt="Toyota Coaster" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -241,7 +224,7 @@
                     </div>
                 </div>
 
-                <!-- Honda Fit -->
+              
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="sedan" data-seats="5">
                     <img src="image/fit.png" alt="Honda Fit" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -266,7 +249,7 @@
                     </div>
                 </div>
 
-                <!-- Toyota Land Cruiser -->
+              
                 <div class="vehicle-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-category="suv" data-seats="7">
                     <img src="image/land.png" alt="Toyota Land Cruiser" class="h-48 w-full object-contain bg-white" />
                     <div class="p-6">
@@ -295,7 +278,7 @@
         </div>
     </div>
 
-    <!-- Service Features -->
+   
     <div class="py-16 bg-gray-100">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Why Choose Our Vehicles?</h2>
@@ -324,7 +307,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
+   
     <footer class="bg-gray-900 text-gray-200 py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

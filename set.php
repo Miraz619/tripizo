@@ -1,5 +1,5 @@
 <?php
-// filepath: c:\xampp\htdocs\tripizo\set.php
+
 
 include 'connect.php';
 

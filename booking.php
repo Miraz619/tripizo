@@ -12,31 +12,7 @@
 <body class="bg-gray-100 font-sans min-h-screen">
 
 
-    <div class="h-15 flex justify-between   items-center ">
-    
-        <div>
-      <h1 class="text-xl font-bold" >
-        <i class="fas fa-car text-black-500 ml-4"></i>
-         <span>Tripizo</span>
-        </h1>
-
-        </div>
-
-        
-            <div class="flex gap-10">
-            <a href="home.html" class="text-base font-bold hover:text-red">Home</a>
-            <a href="#" class="text-base font-bold">Vehicles</a>
-            <a href="#" class="text-base font-bold">Details</a>
-            <a href="#" class="text-base font-bold">About Us</a>
-            <a href="#" class="text-base font-bold">Contact Us</a>
-                </div>
-   
-   <div class="mr-6 ">
-     <a href="#" class=" bg-blue-500 text-white px-4 py-2 rounded-[40px] font-bold hover:bg-red-500 text-blue-200">LOG IN</a>
-    
-   </div>
-
-</div>
+    <?php include 'nav.php'; ?>
 
 
 

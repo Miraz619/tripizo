@@ -36,20 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         let valid = true;
 
-        // Clear previous errors
+      
         fields.forEach(id => {
             const el = document.getElementById(id);
             if (el) clearError(el);
         });
 
-        // Full Name
+       
         const fullName = document.getElementById("full_name");
         if (!fullName.value.trim()) {
             setError(fullName, "Full name is required.");
             valid = false;
         }
 
-        // Email
+        
         const email = document.getElementById("email");
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email.value.trim()) {
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Phone Number
+       
         const phone = document.getElementById("phone_number");
         const phonePattern = /^\d{11}$/;
         if (!phone.value.trim()) {
@@ -71,28 +71,27 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Date of Birth
+     
         const dob = document.getElementById("dob");
         if (!dob.value) {
             setError(dob, "Date of birth is required.");
             valid = false;
         }
 
-        // Permanent Address
+     
         const permanent = document.getElementById("permanent_address");
         if (!permanent.value.trim()) {
             setError(permanent, "Permanent address is required.");
             valid = false;
         }
 
-        // Current Address
         const current = document.getElementById("current_address");
         if (!current.value.trim()) {
             setError(current, "Current/Temporary address is required.");
             valid = false;
         }
 
-        // Password
+       
         const password = document.getElementById("password");
         const confirmPassword = document.getElementById("confirm_password");
         const passwordPattern = /^(?=.*\d).{4,}$/;
@@ -104,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             valid = false;
         }
 
-        // Confirm Password
+        
         if (!confirmPassword.value) {
             setError(confirmPassword, "Please confirm your password.");
             valid = false;
@@ -114,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!valid) {
-            // Add this line for debugging
+            
             e.preventDefault();
         }
     });

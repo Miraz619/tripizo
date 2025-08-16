@@ -1,14 +1,14 @@
 <?php
 
-// Include the database connection file
+
 include 'connect.php';
 
-// Get and sanitize the form data
+
 $full_name = $_POST['full_name'];
 $email = $_POST['email'];
 $phone_number = $_POST['phone_number'];
 $dob = $_POST['dob'];
-$nid = $_POST['n_id']; // The NID can be nullable
+$nid = $_POST['n_id'];
 $permanent_address = $_POST['permanent_address'];
 $current_address = $_POST['current_address'];
 $password = $_POST['password'];
