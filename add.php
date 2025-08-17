@@ -26,7 +26,7 @@ $run = mysqli_query($conn, $query);
 
 
 if ($run) {
-  header("Location:index.html");
+  header("Location:index.php");
 } else {
   echo "Error: " . mysqli_error($conn);
 }
