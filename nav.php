@@ -10,7 +10,7 @@
 
    
     <nav class="flex gap-8 font-bold">
-      <a href="index.php" class="hover:text-red-600">Home</a>
+      <a href="index.html" class="hover:text-red-600">Home</a>
       <a href="vehicles.php" class="hover:text-red-600">Vehicles</a>
       <a href="details.php" class="hover:text-red-600">Details</a>
       <a href="about.php" class="hover:text-red-600">About Us</a>
