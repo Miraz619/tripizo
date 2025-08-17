@@ -26,7 +26,7 @@ if ($check_result->num_rows > 0) {
    
     echo "<script>
         alert('❌ This phone number has already booked. Only one active booking is allowed.');
-        window.location.href = 'booking.html';
+        window.location.href = 'booking.php';
     </script>";
     exit;
 }
